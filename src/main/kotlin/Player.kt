@@ -1,29 +1,29 @@
-class Player(private val hand: String) {
+class Player(private val hand: String){
 
     private var name: String = ""
     val spaceLetter = this.hand.filter { !it.isWhitespace() }
 
 
     fun getNameP1() : String {
-        this.name = "Player 1"
+        this.name = "Player-1"
         return name
     }
 
     fun getNameP2() : String {
 
-        this.name = "Player 2"
+        this.name = "Player-2"
         return name
     }
 
     fun isCheckHand() : Boolean{
 
         if (this.hand.isBlank()){
-            println("Pilihan Tidak Boleh Kosong")
+            println("Pilihan ${this.name} Tidak Boleh Kosong")
             println("===GAME STOP===")
             return true
         }
         else if(!isShowHand(this.hand) || !isShowHand(spaceLetter)){
-            println("Pilihan Anda Salah")
+            println("Pilihan ${this.name} Salah")
             println("===GAME STOP===")
             return true
         }
