@@ -3,9 +3,16 @@ class Player(private val hand: String) {
     private var name: String = ""
     val spaceLetter = this.hand.filter { !it.isWhitespace() }
 
-    fun setName(playerName: String) : String{
-        this.name = playerName
-        return playerName
+
+    fun getNameP1() : String {
+        this.name = "Player 1"
+        return name
+    }
+
+    fun getNameP2() : String {
+
+        this.name = "Player 2"
+        return name
     }
 
     fun isCheckHand() : Boolean{
@@ -15,7 +22,7 @@ class Player(private val hand: String) {
             println("===GAME STOP===")
             return true
         }
-        else if (!isShowHand(this.hand) || !isShowHand(spaceLetter)){
+        else if(!isShowHand(this.hand) || !isShowHand(spaceLetter)){
             println("Pilihan Anda Salah")
             println("===GAME STOP===")
             return true
