@@ -2,8 +2,8 @@ class Game(player1: Player, player2: Player) : Winner() {
 
     private val nameP1 = player1.getName()
     private val nameP2 = player2.getName()
-    private var handP1 = player1.handPlayer
-    private var handP2 = player2.handPlayer
+    private var handP1 = player1.handPlayer.lowercase()
+    private var handP2 = player2.handPlayer.lowercase()
 
     override fun sendWinner(playerName: String) {
         this.playerName = playerName
