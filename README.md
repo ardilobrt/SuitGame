@@ -1,4 +1,5 @@
 # SuitGame
 Suit Game in Terminal Version using Kotlin
 </p>
-<img width="964" height="408" alt="Group 5" src="https://user-images.githubusercontent.com/25278449/164892781-a041b2ac-c849-4bd9-827a-b945feaa4b3f.png">
+
+![Group 5 (1)](https://user-images.githubusercontent.com/25278449/164947078-8472b4d9-4121-418e-8c95-16e0752cf520.png)
