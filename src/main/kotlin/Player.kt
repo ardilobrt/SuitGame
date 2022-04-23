@@ -8,7 +8,7 @@ class Player(private val hand: String) {
         return playerName
     }
 
-    fun ischeckHand() : Boolean{
+    fun isCheckHand() : Boolean{
 
         if (this.hand.isBlank()){
             println("Pilihan Tidak Boleh Kosong")
